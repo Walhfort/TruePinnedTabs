@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "True Pinned Tab",
+    "version": "1.1",
+    "description": "Open links from a different domain in a new tab if the current tab is pinned.",
+    "permissions": [
+      "tabs",
+      "webRequest",
+      "webNavigation"
+    ],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
